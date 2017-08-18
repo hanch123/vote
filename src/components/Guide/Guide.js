@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './Guide.css';
 
 class Guide extends Component {
   render() {
