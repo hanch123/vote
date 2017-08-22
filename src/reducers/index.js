@@ -4,7 +4,7 @@ import {
 } from '../type/index';
 
 const initialState = {
-  showPopup: false,
+  showPopup: false
 };
 export const reducers = (state = initialState, action) => {
   switch (action.type) {

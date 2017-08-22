@@ -12,9 +12,11 @@ import store from './store';
 
 import Guide from './components/Guide/Guide';
 import VoteList from './components/VoteList/VoteList';
+import Winner from './components/Winner/Winner';
+import Join from './components/Join/Join';
 
 const relativeHistory = useRouterHistory(createHistory)({
-  basename: '/vote',
+  basename: '/vote'
 });
 
 const isDev = process.env.NODE_ENV === 'development';
@@ -27,6 +29,8 @@ const Routes = (props) => (
       <Route path="/" component={App}>
         <IndexRoute component={Guide}/>
         <Route path="/voteList" component={VoteList}/>
+        <Route path="/winner" component={Winner}/>
+        <Route path="/Join" component={Join}/>
         <Route path="proxy" component={Proxy}/>
       </Route>
     </Router>
